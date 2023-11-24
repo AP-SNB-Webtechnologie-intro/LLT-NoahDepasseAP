@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oefening</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./my-css/my-css.css">
+    </head>
+
+    <!-- Begin van effectieve html code voor de Weetjes pagina -->
+    <!-- Terugvoorkomende code op andere pagin's -->
+    <body class="color1">
+        <!-- Banner van website -->
+        <div class="container-fluid">
+            <h2 class="display-2 text-center ">Noah's website</h2>
+        </div>
+
+        <!-- Navigatiebalk van website, voorzien van knoppen voor de algemene pagina's(Home, Overzicht, Contact) en een dropdown met topic pagina's -->
+        <nav class="color1 navbar navbar-expand-md pb-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-l abel="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Inhoud van alle navigatie items -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Home pagina button -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <!-- overzicht pagina button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="overzicht.html">Overzicht</a>
+                        </li>
+                        <!-- Navigatie dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Neem een kijkje 
+                            </a>
+                            <!-- Dropdown lijst met topic pagina's -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
+                                <li><a class="dropdown-item" href="#">#nog in te vullen</a></li>
+                                <li><a class="dropdown-item" href="#">#nog in te vullen</a></li>
+                            </ul>
+                        </li>
+                        <!-- Contact pagina button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Alle HTML code, specifiek voor de Weetjes pagina -->
+        <main>
+                        <!--Popover1-->
+                        <!-- Carousel1 -->
+            <!-- <div id="demo" class="carousel slide col-md-5 mx-auto mt-5" data-bs-ride="carousel"> -->
+
+                <!-- Indicators/dots -->
+                <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div> -->
+
+                <!-- The slideshow/carousel -->
+                <!-- <ul class="carousel-inner">
+                    <li class="carousel-cover carousel-item item-perfection active">
+                        <img src="./Weetjes afbeeldingen/Ananas.jpg" alt="Ananas" class="d-block w-100">
+                    </li>
+                    <li class="carousel-cover carousel-item item-perfection">
+                        <img src="./Weetjes afbeeldingen/Cashew-Appel.jpg" alt="Chicago" class="d-block w-100">
+                    </li>
+                    <li class="carousel-cover carousel-item item-perfection">
+                        <img src="./Weetjes afbeeldingen/Ei-drijf-zink.jpg" alt="New York" class="d-block w-100">
+                    </li>
+                </ul> -->
+
+                <!-- Left and right controls/icons -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button> 
+            </div> -->
+
+            <!-- Hoofding van de pagina -->
+            <header class="d-inline-flex color2 rounded-end px-2">
+                <h1>Weetjes</h1>
+            </header>
+
+            <!-- Pagina uitleg -->
+            <article>
+                <h1 class="h6 pt-3 px-2">
+                    Random weetjes vindt iedereen wel leuk. Daarom heb ik hieronder enkele interessante weetjes over eten geplaatst. Kende jij deze al?
+                </h1>
+            </article>
+            
+            <!-- Alle verschillende weetjes verzameld en geplaatst in verschillende cards -->
+            <article class="pt-5">
+                <!-- Container gemaakt voor het plaatsen van de card voor weetje over de ananas -->
+                <section class="container-fluid pb-5">
+                    <!-- De effectieve card zelf -->
+                    <div class="card">
+                        <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
+                        <div class="row color2">
+                            <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Ananas.jpg">
+                            </figure>
+                            <div class="col-md-8">
+                                <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
+                                <div class="card-body">
+                                    <h1 class="h1">Wist je dat..</h1>
+                                    <p class="h4">elke ananas drie jaar oud is?<p>
+                                    <p class="h6">Een verse ananas in de supermarkt is sowieso drie jaar oud, want zo lang doet de plant erover om een ananas-vrucht te laten groeien. Wist je trouwens dat ze aan een stengel vanuit het hart van een vetplant groeien?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- Container gemaakt voor het plaatsen van de card voor weetje over citroen vs limoen -->
+                <section class="container-fluid pb-5">
+                    <!-- De effectieve card zelf -->
+                    <div class="card">
+                        <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
+                                <div class="card-body">
+                                    <h3 class="h1">Wist je dat..</h3>
+                                    <p class="h4">een citroen drijft en een limoen zinkt</p>
+                                    <p class="h6">Doe je een plakje citroen in je water, dan zit je dat de hele tijd met een stokje naar beneden te duwen. Limoen, daarentegen, zakt naar de bodem van je glas en blijft daar.</p>
+                                </div>
+                            </div>
+                            <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Limoen-Citroen.jpg">
+                            </figure>
+                            
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2 rounded">
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded-end" src="./Weetjes afbeeldingen/Ei-drijf-zink.jpg">
+                            </figure>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3>Wist je dat..</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga corporis, sint repellendus nihil maiores laboriosam? Corrupti adipisci reprehenderit quis voluptatem delectus illum in, itaque hic vitae non quam atque.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="h1">Wist je dat..</h3>
+                                    <p class="h4">cashewnoten aan appels groeien</p>
+                                    <p class="h6">cashewnoten groeien aan een boom, bungelend onderaan een speciale langwerpige appel. Die appels smaken bitter en worden gebruikt om jam en chutney van te maken.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Cashew-Appel.jpg">
+                            </figure>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2 rounded">
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded-end" src="./Weetjes afbeeldingen/Ketchup-Med.jpg">
+                            </figure>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3>Wist je dat..</h3>
+                                    <p>In het begin van de twintigste eeuw dachten verschillende doktoren dat tomaten allerlei probleempjes konden oplossen. Er werden pillen met ketchup verkocht tegen diarree, spijsverteringsproblemen, reuma,… Deze theorie is echter nooit bewezen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

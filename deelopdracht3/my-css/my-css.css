@@ -1,0 +1,14 @@
+.item-perfection img {
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    overflow: hidden;
+  }
+
+.color1 {
+  background-color: #e7ddd7;
+}
+.color2{
+  background-color: #ddd0c8;
+}
+  
