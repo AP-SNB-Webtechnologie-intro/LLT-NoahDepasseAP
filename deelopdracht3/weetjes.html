@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
     </head>
 
@@ -20,9 +21,9 @@
     <!-- Terugvoorkomende code op andere pagin's -->
     <body class="color1">
         <!-- Banner van website -->
-        <div class="container-fluid">
-            <h2 class="display-2 text-center ">Noah's website</h2>
-        </div>
+        <figure class="container-fluid col-md-4 pt-3">
+            <img class="img-fluid" src="./afbeeldingen/Algemeen/Banner_Foods_N_Facts.png">
+        </figure>
 
         <!-- Navigatiebalk van website, voorzien van knoppen voor de algemene pagina's(Home, Overzicht, Contact) en een dropdown met topic pagina's -->
         <nav class="color1 navbar navbar-expand-md pb-4">
@@ -36,27 +37,30 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <!-- Home pagina button -->
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link color3" aria-current="page" href="index.html">Home</a>
                         </li>
                         <!-- overzicht pagina button -->
                         <li class="nav-item">
-                            <a class="nav-link" href="overzicht.html">Overzicht</a>
+                            <a class="nav-link color3" href="overzicht.html">Overzicht</a>
                         </li>
                         <!-- Navigatie dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle color3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Neem een kijkje 
                             </a>
                             <!-- Dropdown lijst met topic pagina's -->
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
-                                <li><a class="dropdown-item" href="#">#nog in te vullen</a></li>
-                                <li><a class="dropdown-item" href="#">#nog in te vullen</a></li>
+                            <ul class="dropdown-menu color2">
+                                <li><a class="dropdown-item color3" href="top-restos.html">Top restaurants</a></li>
+                                <li><a class="dropdown-item color3" href="#">In de buurt</a></li>
+                                <li><a class="dropdown-item color3" href="provincie_toppers.html">Provincie toppers</a></li>
+                                <li><a class="dropdown-item color3" href="#">Recepten</a></li>
+                                <li><a class="dropdown-item color3" href="anders-dan-anders.html">Anders dan anders</a></li>
+                                <li><a class="dropdown-item color3" href="weetjes.html">Weetjes </a></li>
                             </ul>
                         </li>
                         <!-- Contact pagina button -->
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link color3" href="contact.html">Contact</a>
                         </li>
                     </ul>
 
@@ -102,16 +106,13 @@
             </div> -->
 
             <!-- Hoofding van de pagina -->
-            <header class="d-inline-flex color2 rounded-end px-2">
-                <h1>Weetjes</h1>
-            </header>
-
-            <!-- Pagina uitleg -->
-            <article>
-                <h1 class="h6 pt-3 px-2">
+            <header class="color3">
+                <h1 class="d-inline-flex color2 rounded-end ps-4 px-2">Weetjes</h1>
+                <p class="h6 pt-3 ps-4 px-2">
                     Random weetjes vindt iedereen wel leuk. Daarom heb ik hieronder enkele interessante weetjes over eten geplaatst. Kende jij deze al?
-                </h1>
-            </article>
+                </p>
+            </header>
+        
             
             <!-- Alle verschillende weetjes verzameld en geplaatst in verschillende cards -->
             <article class="pt-5">
@@ -123,11 +124,11 @@
                         <div class="row color2">
                             <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Ananas.jpg">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Ananas.jpg">
                             </figure>
                             <div class="col-md-8">
                                 <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
-                                <div class="card-body">
+                                <div class="card-body color3">
                                     <h1 class="h1">Wist je dat..</h1>
                                     <p class="h4">elke ananas drie jaar oud is?<p>
                                     <p class="h6">Een verse ananas in de supermarkt is sowieso drie jaar oud, want zo lang doet de plant erover om een ananas-vrucht te laten groeien. Wist je trouwens dat ze aan een stengel vanuit het hart van een vetplant groeien?</p>
@@ -145,7 +146,7 @@
                         <div class="row color2">
                             <div class="col-md-8">
                                 <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
-                                <div class="card-body">
+                                <div class="card-body color3">
                                     <h3 class="h1">Wist je dat..</h3>
                                     <p class="h4">een citroen drijft en een limoen zinkt</p>
                                     <p class="h6">Doe je een plakje citroen in je water, dan zit je dat de hele tijd met een stokje naar beneden te duwen. Limoen, daarentegen, zakt naar de bodem van je glas en blijft daar.</p>
@@ -153,7 +154,7 @@
                             </div>
                             <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Limoen-Citroen.jpg">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Limoen-Citroen.jpg"
                             </figure>
                             
                         </div>
@@ -164,12 +165,12 @@
                     <div class="card">
                         <div class="row color2 rounded">
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded-end" src="./Weetjes afbeeldingen/Ei-drijf-zink.jpg">
+                                <img class="img-fluid rounded-end" src="./afbeeldingen/Weetjes afbeeldingen/Ei-drijf-zink.jpg">
                             </figure>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body color3">
                                     <h3>Wist je dat..</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga corporis, sint repellendus nihil maiores laboriosam? Corrupti adipisci reprehenderit quis voluptatem delectus illum in, itaque hic vitae non quam atque.</p>
+                                    <p>dummytekst</p>
                                 </div>
                             </div>
                         </div>
@@ -180,14 +181,14 @@
                     <div class="card">
                         <div class="row color2">
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body color3">
                                     <h3 class="h1">Wist je dat..</h3>
                                     <p class="h4">cashewnoten aan appels groeien</p>
                                     <p class="h6">cashewnoten groeien aan een boom, bungelend onderaan een speciale langwerpige appel. Die appels smaken bitter en worden gebruikt om jam en chutney van te maken.</p>
                                 </div>
                             </div>
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./Weetjes afbeeldingen/Cashew-Appel.jpg">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Cashew-Appel.jpg">
                             </figure>
                             
                         </div>
@@ -198,10 +199,10 @@
                     <div class="card">
                         <div class="row color2 rounded">
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded-end" src="./Weetjes afbeeldingen/Ketchup-Med.jpg">
+                                <img class="img-fluid rounded-end" src="./afbeeldingen/Weetjes afbeeldingen/Ketchup-Med.jpg">
                             </figure>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body color3">
                                     <h3>Wist je dat..</h3>
                                     <p>In het begin van de twintigste eeuw dachten verschillende doktoren dat tomaten allerlei probleempjes konden oplossen. Er werden pillen met ketchup verkocht tegen diarree, spijsverteringsproblemen, reuma,… Deze theorie is echter nooit bewezen</p>
                                 </div>
@@ -213,8 +214,6 @@
             </article>
 
         </main>
-        <footer>
-            
-        </footer>
+        <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>
