@@ -15,6 +15,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- eigen js -->
+  <script type="text/javascript" src="./js/Searhbar.js"></script>
 
     </head>
     <body>
@@ -47,9 +51,9 @@
                                 <!-- Dropdown lijst met topic pagina's -->
                                 <ul class="dropdown-menu color2">
                                     <li><a class="dropdown-item" href="top-restos.html">Top restaurants</a></li>
-                                    <li><a class="dropdown-item" href="#">In de buurt</a></li>
+                                    <li><a class="dropdown-item" href="favo-resto.html">Persoonlijke favoriet</a></li>
                                     <li><a class="dropdown-item" href="provincie_toppers.html">Provincie toppers</a></li>
-                                    <li><a class="dropdown-item" href="#">Recepten</a></li>
+                                    <li><a class="dropdown-item" href="recepten.html">Recepten</a></li>
                                     <li><a class="dropdown-item" href="anders-dan-anders.html">Anders dan anders</a></li>
                                     <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
                                 </ul>
@@ -59,18 +63,26 @@
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
-    
+                        <div class="search-container">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                            </form>
+                            <ul id="searchResults"></ul>
+                        </div>
                     </div>
     
                 </div>
             </nav>
             <main>
-                <article>
-                    <header class="color3 pb-5">
-                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Top restaurants</h1>
-                        <p class="h6 pt-3 ps-4 px-2 fs-5">Naar restaurants gaan is leuk, het eten is meestal lekker en de sfeer is meestal gezellig. In de meeste gevallen zijn restaurants vrij gelijkaardig, op het interieur na. Maar wat als ik zeg dat dit soms niet het geval is? Wat als het soms anders dan anders is?</p>
+                <!-- Artikel met alle inhoud over speciale restaurants -->
+                <article class="container-fluid">
+                    <header class="color3 px-2">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4">Anders dan anders</h1>
                     </header>
-                    <article>
+                    <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">
+                        Naar restaurants gaan is leuk, het eten is meestal lekker en de sfeer is meestal gezellig. In de meeste gevallen zijn restaurants vrij gelijkaardig, op het interieur na. Maar wat als ik zeg dat dit soms niet het geval is? Wat als het soms anders dan anders is?
+                    </p>
+                    <section>
                         <section class="container-fluid pb-4">
                             <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1 color3">Dinner in the sky</h1>
                         </section>
@@ -95,8 +107,8 @@
                                 </div>
                             </div>
                         </section>
-                    </article>
-                    <article>
+                    </section>
+                    <section>
                         <section class="container-fluid pb-4">
                             <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1 color3">Tram experience</h1>
                         </section>
@@ -119,9 +131,10 @@
                                 </div>
                             </div>
                         </section>
-                    </article>
+                    </section>
                 </article>
             </main>
+            <!-- De footer van de pagina -->
             <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>

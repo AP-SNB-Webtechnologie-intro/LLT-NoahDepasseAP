@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Required meta tags -->
+               <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
-  
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- eigen js -->
   <script type="text/javascript" src="./js/Searhbar.js"></script>
+  <script type="text/javascript" src="./js/meal-api.js"></script>
 
     </head>
     <body class="color1">
@@ -74,57 +74,22 @@
 
         </nav>
         <main>
-            <!-- Hoofd inhoud van de pagina met alle uitleg -->
-            <article class="container-fluid">
-                <header class="color3">
-                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Home</h1>
+            <!-- Artikel met inhoud over Recepten pagina + knop om maaltijd te genereren -->
+            <article>
+                <header class="color3 px-2">
+                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4">Recepten</h1>
                 </header>
-                <section class="container-fluid pb-5">
-                    <!-- De effectieve card zelf -->
-                    <div class="card no-border">
-                        <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
-                        <div class="row color1">
-                            <div class="col-md-8">
-                                <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
-                                <div class="container-fluid card-body color3">
-                                    <p class="fs-5 pt-4">Dag iedereen en welkom op mijn website. Mijn naam is Noah Depasse, ik ben een student Systeem- en Netwerkbeheer aan de AP Hogeschool in Antwerpen. Ik heb deze website ontworpen als opdracht voor het OLOD Webtechnologie Intro. </p>
-                                    <p class="fs-5">Het onderwerp van deze site is 'eten'. Je gaat hier verschillende zaken terug vinden die met eten en restaurants te maken hebben.</p>
-                                    <p class="fs-5">Ik hoop jullie op deze manier met wat nieuwe dingen kennis te laten maken en jullie eventueel te inspireren om zelf eens de keuken in te springen, jullie innerlijke chef kok naar boven te laten komen en iets lekkers te maken. (Als dit het geval is, nodig mij dan zeker uit. Ik eet graag.).</p>
-                                    <p class="fs-5">Neem gerust een zelf eens een kijkje en laat me zeker en vast weten wat je van de website vond.</p>
-                                    <p class="fs-2">Wees wel gewaarschuwd... je gaat er honger van krijgen</p>
-                                </div>
-                            </div>
-                            <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
-                            <figure class="col-md-4">
-                                <img class="card-img rounded-circle" src="./afbeeldingen/Algemeen/Noah-Depasse.jpg">
-                            </figure>
-                            
-                        </div>
+                <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">Weet je niet goed wat je wilt eten, of kan je niet kiezen tussen verschillende maaltijden? Hier kan je een willekeurige maaltijd laten genereren die je dan zelf kan klaarmaken. Klik gewoon op de knop hieronder!</p>
+                <!-- Knop om maaltijd te genereren -->
+                <div class="px-4">
+                    <div id="meal-container text-left">
+                        <button id="generate-btn">Random meal</button>
+                        <div id="meal-details"></div>
                     </div>
-                </section>
-                <section class="pt-5">
-                    <div class="card">
-                        <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
-                        <div class="row color2">
-                            <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
-                            <figure class="col-md-4">
-                                <img class="img-fluid pt-3 rounded-pill" src="./afbeeldingen/Algemeen/volauvent.jpg">
-                            </figure>
-                            <div class="col-md-8">
-                                <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
-                                <div class="card-body color3">
-                                    <h1 class="h2">Vol au vent</h1>
-                                    <p class="fs-5">Als een klein voorproevertje wil ik jullie alvast kennis laten maken met mijn favoriete gerecht: Vol-au-vent</p>
-                                    <p class="fs-5">Vol-au-vent is een gerecht dat bestaat uit eerder gegaarde stukjes gesneden vlees, gevogelte of vis in een gekruide saus. Het gerecht is ook bekend onder de naam Ragout. Het woord ragout komt uit het Frans. Ragoûter betekent de smaak verbeteren. Voor de vlees of visproducten in de ragout kunnen dan ook restjes gebruikt worden van een vorige maaltijd.</p>
-                                    <p class="fs-5">Zeker een aanrader als je dit nog niet gegeten hebt!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </article>
         </main>
-        <!-- De footer van de pagina -->
+        <!-- Footer van de pagina -->
         <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>

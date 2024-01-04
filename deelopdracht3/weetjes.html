@@ -15,12 +15,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- eigen js -->
+  <script type="text/javascript" src="./js/Searhbar.js"></script>
     </head>
 
     <!-- Begin van effectieve html code voor de Weetjes pagina -->
     <!-- Terugvoorkomende code op andere pagin's -->
     <body class="color1">
-        <!-- Banner van website -->
+        <!-- Banner van de pagina -->
         <figure class="container-fluid col-md-4 pt-3">
             <img class="img-fluid" src="./afbeeldingen/Algemeen/Banner_Foods_N_Facts.png">
         </figure>
@@ -50,12 +54,12 @@
                             </a>
                             <!-- Dropdown lijst met topic pagina's -->
                             <ul class="dropdown-menu color2">
-                                <li><a class="dropdown-item color3" href="top-restos.html">Top restaurants</a></li>
-                                <li><a class="dropdown-item color3" href="#">In de buurt</a></li>
-                                <li><a class="dropdown-item color3" href="provincie_toppers.html">Provincie toppers</a></li>
-                                <li><a class="dropdown-item color3" href="#">Recepten</a></li>
-                                <li><a class="dropdown-item color3" href="anders-dan-anders.html">Anders dan anders</a></li>
-                                <li><a class="dropdown-item color3" href="weetjes.html">Weetjes </a></li>
+                                <li><a class="dropdown-item" href="top-restos.html">Top restaurants</a></li>
+                                <li><a class="dropdown-item" href="favo-resto.html">Persoonlijke favoriet</a></li>
+                                <li><a class="dropdown-item" href="provincie_toppers.html">Provincie toppers</a></li>
+                                <li><a class="dropdown-item" href="recepten.html">Recepten</a></li>
+                                <li><a class="dropdown-item" href="anders-dan-anders.html">Anders dan anders</a></li>
+                                <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
                             </ul>
                         </li>
                         <!-- Contact pagina button -->
@@ -63,68 +67,41 @@
                             <a class="nav-link color3" href="contact.html">Contact</a>
                         </li>
                     </ul>
-
+                    <!-- Searchbar om te zoeken op alle pagina's van de website -->
+                    <div class="search-container">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                        </form>
+                        <ul id="searchResults"></ul>
+                    </div>
                 </div>
 
             </div>
 
         </nav>
 
-        <!-- Alle HTML code, specifiek voor de Weetjes pagina -->
         <main>
-                        <!--Popover1-->
-                        <!-- Carousel1 -->
-            <!-- <div id="demo" class="carousel slide col-md-5 mx-auto mt-5" data-bs-ride="carousel"> -->
-
-                <!-- Indicators/dots -->
-                <!-- <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div> -->
-
-                <!-- The slideshow/carousel -->
-                <!-- <ul class="carousel-inner">
-                    <li class="carousel-cover carousel-item item-perfection active">
-                        <img src="./Weetjes afbeeldingen/Ananas.jpg" alt="Ananas" class="d-block w-100">
-                    </li>
-                    <li class="carousel-cover carousel-item item-perfection">
-                        <img src="./Weetjes afbeeldingen/Cashew-Appel.jpg" alt="Chicago" class="d-block w-100">
-                    </li>
-                    <li class="carousel-cover carousel-item item-perfection">
-                        <img src="./Weetjes afbeeldingen/Ei-drijf-zink.jpg" alt="New York" class="d-block w-100">
-                    </li>
-                </ul> -->
-
-                <!-- Left and right controls/icons -->
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button> 
-            </div> -->
-
-            <!-- Hoofding van de pagina -->
-            <header class="color3">
-                <h1 class="d-inline-flex color2 rounded-end ps-4 px-2">Weetjes</h1>
-                <p class="h6 pt-3 ps-4 px-2">
+            <!-- Alle verschillende weetjes verzameld en geplaatst in verschillende cards -->
+            <article class="container-fluid">
+                    <!-- Hoofding van de pagina -->
+                <header class="color3 px-2">
+                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Weetjes</h1>
+                </header>
+                
+                <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">
                     Random weetjes vindt iedereen wel leuk. Daarom heb ik hieronder enkele interessante weetjes over eten geplaatst. Kende jij deze al?
                 </p>
-            </header>
-        
-            
-            <!-- Alle verschillende weetjes verzameld en geplaatst in verschillende cards -->
-            <article class="pt-5">
+
                 <!-- Container gemaakt voor het plaatsen van de card voor weetje over de ananas -->
-                <section class="container-fluid pb-5">
+                <!-- Deze code word hergebruikt voor alle weetjes -->
+                <section class="container-fluid">
                     <!-- De effectieve card zelf -->
                     <div class="card">
                         <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
                         <div class="row color2">
                             <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Ananas.jpg">
+                                <img class="img-fluid rounded pt-3" src="./afbeeldingen/Weetjes afbeeldingen/Ananas.jpg">
                             </figure>
                             <div class="col-md-8">
                                 <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
@@ -138,23 +115,18 @@
                     </div>
                 </section>
     
-                <!-- Container gemaakt voor het plaatsen van de card voor weetje over citroen vs limoen -->
-                <section class="container-fluid pb-5">
-                    <!-- De effectieve card zelf -->
+                <section class="container-fluid pb-5 pt-5">
                     <div class="card">
-                        <!-- Onderverdeling tussen deel voor afbeelding en deel voor tekst -->
                         <div class="row color2">
                             <div class="col-md-8">
-                                <!-- De card body, bedoeld voor de tekst, onderverdeeld in de hoofding en 2 paragraphs -->
                                 <div class="card-body color3">
                                     <h3 class="h1">Wist je dat..</h3>
                                     <p class="h4">een citroen drijft en een limoen zinkt</p>
                                     <p class="h6">Doe je een plakje citroen in je water, dan zit je dat de hele tijd met een stokje naar beneden te duwen. Limoen, daarentegen, zakt naar de bodem van je glas en blijft daar.</p>
                                 </div>
                             </div>
-                            <!-- De gebruikte afbeelding, terug te vinden in /Weetjes afbeeldingen/ -->
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Limoen-Citroen.jpg"
+                                <img class="img-fluid rounded pt-3" src="./afbeeldingen/Weetjes afbeeldingen/Limoen-Citroen.jpg">
                             </figure>
                             
                         </div>
@@ -165,12 +137,12 @@
                     <div class="card">
                         <div class="row color2 rounded">
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded-end" src="./afbeeldingen/Weetjes afbeeldingen/Ei-drijf-zink.jpg">
+                                <img class="img-fluid rounded pt-3" src="./afbeeldingen/Weetjes afbeeldingen/Ei-drijf-zink.jpg">
                             </figure>
                             <div class="col-md-8">
                                 <div class="card-body color3">
-                                    <h3>Wist je dat..</h3>
-                                    <p>dummytekst</p>
+                                    <h3 class="h1">Wist je dat..</h3>
+                                    <p class="h6">Als je een ei in een glas water doet en het blijft drijven, dat het ei niet meer goed is. Als het naar de bodem zinkt dan is het nog eetbaar en als het tussenin is, dan is het opzich nog goed, maar dan kan je er best niet te lang mee wachten.</p>
                                 </div>
                             </div>
                         </div>
@@ -188,32 +160,31 @@
                                 </div>
                             </div>
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded" src="./afbeeldingen/Weetjes afbeeldingen/Cashew-Appel.jpg">
+                                <img class="img-fluid rounded pt-3" src="./afbeeldingen/Weetjes afbeeldingen/Cashew-Appel.jpg">
                             </figure>
                             
                         </div>
                     </div>
                 </section>
-
+                <!-- Weetje over ketchup -->
                 <section class="container-fluid pb-5">
                     <div class="card">
                         <div class="row color2 rounded">
                             <figure class="col-md-4">
-                                <img class="img-fluid rounded-end" src="./afbeeldingen/Weetjes afbeeldingen/Ketchup-Med.jpg">
+                                <img class="img-fluid rounded pt-3" src="./afbeeldingen/Weetjes afbeeldingen/Ketchup-Med.jpg">
                             </figure>
                             <div class="col-md-8">
                                 <div class="card-body color3">
-                                    <h3>Wist je dat..</h3>
-                                    <p>In het begin van de twintigste eeuw dachten verschillende doktoren dat tomaten allerlei probleempjes konden oplossen. Er werden pillen met ketchup verkocht tegen diarree, spijsverteringsproblemen, reuma,… Deze theorie is echter nooit bewezen</p>
+                                    <h3 class="h1">Wist je dat..</h3>
+                                    <p class="h6">In het begin van de twintigste eeuw dachten verschillende doktoren dat tomaten allerlei probleempjes konden oplossen. Er werden pillen met ketchup verkocht tegen diarree, spijsverteringsproblemen, reuma,… Deze theorie is echter nooit bewezen</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
             </article>
-
         </main>
+        <!-- Footer van de pagina -->
         <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>

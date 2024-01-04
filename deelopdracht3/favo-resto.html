@@ -20,20 +20,21 @@
   <!-- Leaflet js -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- eigen leaflet js -->
-  <script type="text/javascript" src="./js/ap-map.js"></script>
+  <script type="text/javascript" src="./js/map.js"></script>
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- eigen js -->
   <script type="text/javascript" src="./js/Searhbar.js"></script>
-  
+
     </head>
     <body class="color1">
+        <!-- Banner van de pagina -->
         <figure class="container-fluid col-md-4 pt-3">
             <img class="img-fluid" src="./afbeeldingen/Algemeen/Banner_Foods_N_Facts.png">
         </figure>
 
         <!-- Navigatiebalk van website, voorzien van knoppen voor de algemene pagina's(Home, Overzicht, Contact) en een dropdown met topic pagina's -->
-        <nav class="navbar navbar-expand-md">
+        <nav class="color1 navbar navbar-expand-md pb-4">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-l abel="Toggle navigation">
@@ -62,9 +63,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
+                    <!-- Search bar om te zoeken door de pagina's van de website -->
                     <div class="search-container">
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
@@ -79,74 +81,29 @@
         <main>
             <article class="container-fluid">
                 <header class="color3 px-2">
-                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Contact</h1>
+                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Persoonlijke favoriet</h1>
                 </header>
-                <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">
-                    Als u een vraag heeft voor de admin of webdesigner, dan kan u het onderstaande contact formulier invullen
+                <p class="h6 pt-3 ps-4 color3 fs-5">
+                    Veel mensen hebben een favoriet restaurant. Hieronder vind je alle info over mijn persoonlijke favoriet.
                 </p>
-                <div class="container-fluid px-4 pt-2">
-                    <!-- Bootstrap 5 starter form -->
-                    <form id="contactForm">
-                        <div class="row mb-3 d-flex">
-                            <!-- Name input -->
-                            <div class="col-md-6 mb-4">
-                                <label class="form-label" for="name">Name</label>
-                                <input class="form-control" id="name" type="text" placeholder="Name" />
-                            </div>
-                        
-                            <!-- Email address input -->
-                            <div class="col-md-6">
-                                <label class="form-label" for="emailAddress">Email Address</label>
-                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-                            </div>
-                        </div>
-    
-                        <!-- Message input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-                        </div>
-                        
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Noah Depasse (Admin)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Hach Timelus (Webdesigner)
-                            </label>
-                        </div>
-    
-                        <!-- Form submit button -->
-                        <div class="d-grid pt-3">
-                            <button class="btn btn-primary btn-lg color4 color no-border" type="submit">Submit</button>
-                        </div>
-                  
-                    </form>
-                  
-                  </div>
-                  <section class="container-fluid pb-5 pt-5">
+                <section class="container-fluid pb-5 pt-4">
                     <div class="card">
                         <div class="row color2">
                             <div class="col-md-6">
                                 <div class="card-body color3">
-                                    <h1 class="h2">Waar u ons kan vinden</h5>
-                                    <p class="h5">Campus Noorderplaats</p>
-                                    <p>Noorderplaats 2, 2000 Antwerpen</p>
-                                    <p class="h5">Campus Ellermanstraat</p>
-                                    <p>Ellermanstraat 33, 2060 Antwerpen</p>
-                                    <p class="h5">Campus Viaduct</p>
-                                    <p>Ellermanstraat 71, 2060 Antwerpen</p>
-                                    <h2 class="h5 pt-3">Voor dringende vragen</h6>
-                                    <p><a class="color3" href="mailto: s148820@ap.be">s148820@ap.be</a></p>
-                                    
+                                    <h1 class="h2">De Broertjes Kapellen</h5>
+                                    <p>Kapelsestraat 254, 2950 Kapellen</p>
+                                    <p class="h5">Contact</p>
+                                    <p>Website: <a class="color3" href="https://de-broertjes.be/">https://de-broertjes.be/</a></p>
+                                    <p>Telefoon: <a class="color3" href="tel:+03 605 82 88">03 605 82 88</a></p>
+                                    <p>email: <a class="color3" href="mailto: s148820@ap.be">kapellen@de-broertjes.be</a></p>
+                                    <h2 class="h5">Openingsuren</h6>
+                                    <p class="fw-bold">Woensdag - Zondag</p>
+                                    <p>Keuken open vanaf 17u tot 22.00u voor warme gerechten, tot 22.30 voor dessertjes.</p>
                                 </div>
                             </div>
                             <section class="col-md-6">
-                                <div id="ap-map"></div>
+                                <div id="mymap"></div>
                             </section>
                             
                         </div>
@@ -154,7 +111,6 @@
                 </section>
             </article>
         </main>
-        <!-- De footer van de pagina -->
         <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>

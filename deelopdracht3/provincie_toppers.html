@@ -15,6 +15,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- eigen js -->
+  <script type="text/javascript" src="./js/Searhbar.js"></script>
 
     </head>
     
@@ -22,6 +26,8 @@
         <figure class="container-fluid col-md-4 pt-3">
             <img class="img-fluid" src="./afbeeldingen/Algemeen/Banner_Foods_N_Facts.png">
         </figure>
+
+        <!-- Navigatiebalk van website, voorzien van knoppen voor de algemene pagina's(Home, Overzicht, Contact) en een dropdown met topic pagina's -->
         <nav class="color1 navbar navbar-expand-md pb-4">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -47,9 +53,9 @@
                             <!-- Dropdown lijst met topic pagina's -->
                             <ul class="dropdown-menu color2">
                                 <li><a class="dropdown-item" href="top-restos.html">Top restaurants</a></li>
-                                <li><a class="dropdown-item" href="#">In de buurt</a></li>
+                                <li><a class="dropdown-item" href="favo-resto.html">Persoonlijke favoriet</a></li>
                                 <li><a class="dropdown-item" href="provincie_toppers.html">Provincie toppers</a></li>
-                                <li><a class="dropdown-item" href="#">Recepten</a></li>
+                                <li><a class="dropdown-item" href="recepten.html">Recepten</a></li>
                                 <li><a class="dropdown-item" href="anders-dan-anders.html">Anders dan anders</a></li>
                                 <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
                             </ul>
@@ -59,33 +65,37 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-
+                    <div class="search-container">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                        </form>
+                        <ul id="searchResults"></ul>
+                    </div>
                 </div>
 
             </div>
         </nav>
         <main>
-            <header class="color3">
-                <h1 class="d-inline-flex color2 rounded-end px-2">Provincie toppers</h1>
-                <p class="h6 pt-3 px-2 fs-5">
-                    Elke streek kent zijn eigen specialiteiten. Hieronder vind je per provincie enkele specialiteiten terug die bekend zijn binnen deze streek.
-                </p>
-            </header>
-            <article class="pt-5 color3" id="toppers">
-                <article id="Antwerpen">
-                    <div class="container-fluid">
-                        <h1 class="d-inline-flex color2 rounded px-2">Antwerpen</h1>
-                    </div>
+            <article class="container-fluid color3" id="toppers">
+                <header class="color3">
+                    <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4">Provincie toppers</h1>
+                </header>
+                <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">Elke streek kent zijn eigen specialiteiten. Hieronder vind je per provincie enkele specialiteiten terug die bekend zijn binnen deze streek.</p>
+                <section>
+                    <header class="container-fluid pb-3">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Antwerpen</h1>
+                    </header>
                     <section class="container-fluid pb-3">
                         <div class="card">
                             <div class="row color2">
                                 <figure class="col-md-4">
-                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/krieken-balletjes.jpg">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Antwerpen/krieken-balletjes.jpg">
                                 </figure>
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h2 class="h2">Krieken en gehaktballetjes</h1>
-                                        <p class="fs-5">Dit is een traditioneel Belgisch en meer specifiek een Vlaams streekgerecht dat vaak geserveerd wordt bij familiefeestjes in Antwerpen en in de Antwerpse Kempen in het bijzonder. De juiste oorsprong is niet bekend, maar er zijn soortgelijke gerechten te vinden in de Arabische keuken, bijvoorbeeld Kafta bil-qaraz</p>
+                                        <p class="fs-5">Dit is een traditioneel Belgisch en meer specifiek een Vlaams streekgerecht dat vaak geserveerd wordt bij familiefeestjes in Antwerpen en in de Antwerpse Kempen in het bijzonder.</p>
+                                        <p class="fs-5">De juiste oorsprong is niet bekend, maar er zijn soortgelijke gerechten te vinden in de Arabische keuken, bijvoorbeeld Kafta bil-qaraz</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,37 +108,376 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h2 class="h2">Lierse vlaaikes</h3>
-                                        <p class="fs-5">Het Liers vlaaike is wellicht meer dan 300 jaar oud. Het oorspronkelijke gebakje had een bodem met deeg van bloem en water. Dit deeg werd in houten vormpjes geduwd waarna men ze gewoon enkele dagen liet uitdrogen. Het ontvormde harde deegbakje werd vervolgens gevuld en in de oven gebakken. Het resultaat was een lekker gebakje, maar hard als beton.</p>
+                                        <p class="fs-5">Het Liers vlaaike is wellicht meer dan 300 jaar oud. Het oorspronkelijke gebakje had een bodem met deeg van bloem en water.</p>
+                                        <p class="fs-5">Dit deeg werd in houten vormpjes geduwd waarna men ze gewoon enkele dagen liet uitdrogen. Het ontvormde harde deegbakje werd vervolgens gevuld en in de oven gebakken.</p>
+                                        <p class="fs-5">Het resultaat was een lekker gebakje, maar hard als beton.</p>
                                     </div>
                                 </div>
                                 <figure class="col-md-4">
-                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Liersvlaaike.jpg">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Antwerpen/Liersvlaaike.jpg">
                                 </figure>
                             </div>
                         </div>
                     </section>
-                </article>
+                </section>
 
-                <article id="Oost-Vlaanderen">
-                    <div class="container-fluid pb-3 pt-5">
-                        <h1 class="d-inline-flex color2 rounded px-2">Oost-Vlaanderen</h1>
-                    </div>
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Oost-Vlaanderen</h1>
+                    </header>
                     <section class="container-fluid pb-3">
                         <div class="card">
                             <div class="row color2">
                                 <figure class="col-md-4">
-                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Oost-Vlaanderen/Gentse-waterzooi.jpg">
                                 </figure>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h2 class="h2"></h2>
-                                        <p class="fs-5"></p>
+                                        <h2 class="h2">Gentse Waterzooi</h2>
+                                        <p class="fs-5">Oorspronkelijk werd dit middeleeuws gerecht op basis van zoetwatervis gemaakt, met onder andere paling, karper, snoek en baars.</p>
+                                        <p class="fs-5">Die vissoorten waren ruim voorhanden in de Gentse grachten en kanalen.</p>
+                                        <p class="fs-5">Toen het binnenwater te vervuild geraakte en vis te duur, werd waterzooi met kip de standaard.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                </article>
+                    <section class="container-fluid pb-5">
+                        <div class="card">
+                            <div class="row color2">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Mattentaart</h3>
+                                        <p class="fs-5">Geraardsbergen is de hoofdstad van de mattentaart. Dit gebakje heeft een geografisch beschermde status.</p>
+                                        <p class="fs-5">De 'matten', gestremde melk, is het belangrijkste onderdeel ervan. De geschiedenis van de mattentaart gaat terug tot in de middeleeuwen.</p>
+                                        <p class="fs-5">Ook in de buurlanden zijn aanverwante gerechten op basis van matten, of wrongel, gekend.</p>
+                                        <p class="fs-5">Uit onderzoek bij 14.000 Belgen is onlangs gebleken dat de mattentaart het favoriete streekgerecht is van de Belg.</p>
+                                    </div>
+                                </div>
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Oost-Vlaanderen/Mattentaart.jpg">
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">West-Vlaanderen</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/West-Vlaanderen/Amandeltaart.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Diksmuidse Amandeltaart</h2>
+                                        <p class="fs-5">Deze taart werd oorspronkelijk vooral in het Paasweekend gebakken.</p>
+                                        <p class="fs-5">De oorsprong van dit taartje gaat terug tot de 13e eeuw.Variant: in sommige recepten wordt geraste schil van biocitroen in het deeg gemengd.</p>
+                                        <p class="fs-5">In andere is er sprake van afwerking met rode bessen of wordt het amandeldeeg in bladerdeeg gebakken.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Smeus</h3>
+                                    <p class="fs-5">Smeus is een West-Vlaams streekgerecht dat sterk verbonden is met de kuststreek. </p>
+                                    <p class="fs-5">Er bestaan talloze varianten op het basisrecept, maar altijd hoort er karnemelk in de puree, gepelde garnalen en een gepocheerd ei erbij.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/West-Vlaanderen/Smeus.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Limburg</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Limburg/Hete-bliksem.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Hete bliksem</h2>
+                                        <p class="fs-5">Hete bliksem is van oorsprong een Limburgs streekgerecht, bekend in zowel het Nederlandse als het Belgische deel van Limburg.</p>
+                                        <p class="fs-5">De benaming 'hete bliksem' zou verwijzen naar de appeltjes, die langer hun warmte behouden en zorgen voor een onverwacht hete temperatuurervaring als je een schep van dit gerechtje neemt als het juist uit de oven komt.</p>
+                                        <p class="fs-5">Het recept dateert blijkbaar uit de periode waarin de aardappel in onze streken ingevoerd werd. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Knapkoek</h3>
+                                    <p class="fs-5">Knapkoek is een oud gerecht uit Belgisch en Nederlands Limburg en meer bepaald uit de Maasvallei.</p>
+                                    <p class="fs-5">Deze specialiteit is ontstaan als een soort scheepsbeschuit toen Maaseik als haven bij binnenschippers in gebruik was.</p>
+                                    <p class="fs-5">Door zijn structuur droogt de knapkoek niet snel uit en is daardoor lang eetbaar.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Limburg/Knapkoek.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Vlaams-Brabant</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Vlaams-Brabant/brabantse-kaastaart.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Brabantse Kaastaart</h2>
+                                        <p class="fs-5">De Brabantse kaastaart is een typische kermistaart die vroeger thuis werd klaargemaakt, maar afgebakken door de plaatselijke bakker bij gebrek aan een eigen oven.</p>
+                                        <p class="fs-5">Nu bijna iedereen een oven heeft, gebeurt dit uiteraard niet meer.</p>
+                                        <p class="fs-5">Een jaarlijkse wedstrijd in Hoeilaart houdt de traditie echter in ere.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Gegrilde Boekstring</h3>
+                                    <p class="fs-5">Eigenlijk is het basisrecept vrij simpel: een bakharing op een stuk brood. Vroeger werd dit begeleid van ajuinsaus.</p>
+                                    <p class="fs-5">Deze vis heeft ook een historische verankering. In de katholieke godsdienst bestonden veel vastendagen buiten de wekelijkse vrijdagen. Dan at men vooral gerookte of gezouten vis.</p>
+                                    <p class="fs-5">Haring was een belangrijk element van het volksvoedsel in Vlaanderen.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Vlaams-Brabant/Boekstring.jpeg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Waals-Brabant</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Waals-Brabant/tarte-au-stofe.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Tarte au stofé</h2>
+                                        <p class="fs-5">In Wavre is het de tarte au stofé die in de kijker staat.</p>
+                                        <p class="fs-5">'Stofé' betekent kwark in het Waals en het is het voornaamste ingrediënt van deze verse taart met amandelkoekjes en fijngestampte bittere amandelen op een bedje van Reinette appels. </p>
+                                        <p class="fs-5">Een lekkernij om de vingers bij af te likken.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Tarte al Djote</h3>
+                                    <p class="fs-5">De reputatie van de Târte al Djote van Nivelles hoeft niet meer gemaakt.</p>
+                                    <p class="fs-5">Deze lekkere hartige taart wordt bereid met de onmisbare bètchèye (gefermenteerde kaas op basis van afgeroomde koemelk) en snijbieten, maar ook met eieren, gehakte peterselie, kleine groene uitjes en boter.</p>
+                                    <p class="fs-5">Het eetritueel bestaat erin de nog warme taart te doorprikken met een vork en er een grote klomp gezouten boter op te leggen.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Waals-Brabant/tarte-al-djote.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Henegouwen</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Henegouwen/rastons-al-petote.png">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Rastons al petote</h2>
+                                        <p class="fs-5">De rastons al petote verschillen in weinig van bijvoorbeeld de rösti, behalve hun historische en sociale achtergrond.</p>
+                                        <p class="fs-5">In de Borinage was dit gerechtje wekelijkse kost in de mijnwerkersgezinnen in afwisseling met gewoon gekookte aardappelen of puree. Het was goedkoop en voedzaam.</p>
+                                        <p class="fs-5">De rastons werden gebakken in margarine en niet in echte boter die enkel met de feestdagen op tafel kon komen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Doornikse Salade</h3>
+                                    <p class="fs-5">Verloren maandag is een traditioneel feest dat plaatsvindt op de eerste maandag na Driekoningen. </p>
+                                    <p class="fs-5">De Antwerpenaren eten die dag appelbollen en worstenbrood. In Doornik doen ze het anders. </p>
+                                    <p class="fs-5">Er wordt in familie- en vriendenkring een volledige maaltijd aangeboden, met een vast menu: een worstje met appelmoes, konijn op Doornikse wijze, Doornikse salade en mutiau (een soort perskop). </p>
+                                    <p class="fs-5">Soms volgt nog een Driekoningentaart.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Henegouwen/doornikse-salade.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Luik</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Luik/luikse-wafel.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Luikse Wafel</h2>
+                                        <p class="fs-5">De Luikse wafel heeft als typisch kenmerk zijn ronde vorm en de parelsuiker die in het deeg verwerkt is.</p>
+                                        <p class="fs-5">Het was oorspronkelijk kermiseten, maar is uitgegroeid tot een vaste waarde in onze eetcultuur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Baisers de Malmedy</h3>
+                                    <p class="fs-5">Het recept van de 'baisers' of kusjes dateert van de 19e eeuw.</p>
+                                    <p class="fs-5">Het werd oorspronkelijk gecommercialiseerd onder de naam blankès mèringues.</p>
+                                    <p class="fs-5">Naast het origineel uit Malmedy, bestaan er tal van varianten, zoals de 'baisers de Neufchâteau', waar als vulling chocoladecrème gebruikt wordt.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Luik/baisers-de-Malmedy.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Namen</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Namen/dinantse-flamiche.jpg">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Dinantse Flamiche</h2>
+                                        <p class="fs-5">Er bestaan vele soortgelijke kaastaarten, maar de flamiche van Dinants behoort ongetwijfeld tot de bekendste.</p>
+                                        <p class="fs-5">Het is de kaas, de boulette de Romedenne, die de unieke smaak geeft aan dit streekgerechtje.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">l'avisance</h3>
+                                    <p class="fs-5">Het broodje vindt z’n oorsprong in de middeleeuwen, toen de pelgrims uit Namen ‘het advies’ kregen om deze specifieke maaltijd mee te nemen tijdens hun bedevaart naar de Notre-Dame in Halle. Dat was een tocht van 120 Km, heen en terug. Een stevige hap voor onderweg was dus welkom.</p>
+                                    <p class="fs-5">Oorspronkelijk was het een opgerolde pannenkoek gevuld met gehakte en gebakken vleesresten. Het recept evolueerde naar het gebruik van brooddeeg en later bladerdeeg. </p>
+                                    <p class="fs-5">De gebakken vleesresten werden vervangen door een vulling met gemengd gehakt.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Namen/lavisance.png">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <header class="container-fluid pb-3 pt-5">
+                        <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Luxemburg</h1>
+                    </header>
+                    <section class="container-fluid pb-3">
+                        <div class="card">
+                            <div class="row color2">
+                                <figure class="col-md-4">
+                                    <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Luxemburg/le-gozeau-des-scailtons.png">
+                                </figure>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="h2">Le gozeau des scailtons</h2>
+                                        <p class="fs-5">Dit is een taart die gemaakt wordt met gistdeeg en appelen. Heel eenvoudig en niet duur.</p>
+                                        <p class="fs-5">Het was het favoriete dessert van de Scailtons, de arbeiders die in de leisteengroeven werkten in Wallonië.</p>
+                                        <p class="fs-5">De taart werd vooral gebakken in gezinnen van mijnwerkers in de provincie Luxemburg.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="container-fluid pb-5">
+                    <div class="card">
+                        <div class="row color2">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h2 class="h2">Le cabu roussi au mouton</h3>
+                                    <p class="fs-5">De Gaume, in het uiterste zuiden van het land, wordt ook wel Belgisch Lotharingen genoemd.</p>
+                                    <p class="fs-5">De meest bekendste culinaire specialiteiten zijn behoorlijk stevige maaltijdgerechten, vooral dan de stoofpotjes zoals deze cabu roussi.</p>
+                                </div>
+                            </div>
+                            <figure class="col-md-4">
+                                <img class="img-fluid rounded" src="./afbeeldingen/Provincie toppers afbeeldingen/Luxemburg/le-cabu-roussi-au-mouton.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
             </article>
         </main>
         <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>

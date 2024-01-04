@@ -15,12 +15,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen CSS -->
   <link rel="stylesheet" href="./my-css/my-css.css">
+  <!-- eigen js -->
+  <script type="text/javascript" src="./js/Searhbar.js"></script>
     
     </head>
     <body class="color1">
         <figure class="container-fluid col-md-4 pt-3">
             <img class="img-fluid" src="./afbeeldingen/Algemeen/Banner_Foods_N_Facts.png">
         </figure>
+
+        <!-- Navigatiebalk van website, voorzien van knoppen voor de algemene pagina's(Home, Overzicht, Contact) en een dropdown met topic pagina's -->
         <nav class="navbar navbar-expand-md pb-4">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -28,6 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Inhoud van alle navigatie items -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -40,12 +45,12 @@
                                 Neem een kijkje 
                             </a>
                             <ul class="dropdown-menu color2">
-                                <li><a class="dropdown-item color3" href="top-restos.html">Top restaurants</a></li>
-                                <li><a class="dropdown-item color3" href="#">In de buurt</a></li>
-                                <li><a class="dropdown-item color3" href="provincie_toppers.html">Provincie toppers</a></li>
-                                <li><a class="dropdown-item color3" href="#">Recepten</a></li>
-                                <li><a class="dropdown-item color3" href="anders-dan-anders.html">Anders dan anders</a></li>
-                                <li><a class="dropdown-item color3" href="weetjes.html">Weetjes </a></li>
+                                <li><a class="dropdown-item" href="top-restos.html">Top restaurants</a></li>
+                                <li><a class="dropdown-item" href="favo-resto.html">Persoonlijke favoriet</a></li>
+                                <li><a class="dropdown-item" href="provincie_toppers.html">Provincie toppers</a></li>
+                                <li><a class="dropdown-item" href="recepten.html">Recepten</a></li>
+                                <li><a class="dropdown-item" href="anders-dan-anders.html">Anders dan anders</a></li>
+                                <li><a class="dropdown-item" href="weetjes.html">Weetjes </a></li>
                             </ul>
                         </li>
                         
@@ -53,14 +58,126 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-
+                    <div class="search-container">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                        </form>
+                        <ul id="searchResults"></ul>
+                    </div>
                 </div>
 
             </div>
 
         </nav>
         <main>
-            
+            <div class="d-flex">
+                <div class="ps-3">
+                    <ul class="toc-container rounded color2">
+                        <li >
+                            <p class="fs-5">Home</p>
+                        </li>
+                        <li>
+                            <p class="fs-5">Top restaurants</p>
+                            <ul>
+                                <li>
+                                    <p>The Jane</p>
+                                </li>
+                                <li>
+                                    <p>L'Air du Temps</p>
+                                </li>
+                                <li>
+                                    <p>Hertog Jan</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="fs-5">Mijn favoriet</p>
+                            <ul>
+                                <li>
+                                    <p>De Broertjes Kapellen</p>
+                                </li>
+                                <li>
+                                    <p>Locatie</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="fs-5">Provincie toppers</p>
+                            <ul>
+                                <li>
+                                    <p>Antwerpen</p>
+                                </li>
+                                <li>
+                                    <p>Oost-Vlaanderen</p>
+                                </li>
+                                <li>
+                                    <p>West-Vlaanderen</p>
+                                </li>
+                                <li>
+                                    <p>Limburg</p>
+                                </li>
+                                <li>
+                                    <p>Vlaams-Brabant</p>
+                                </li>
+                                <li>
+                                    <p>Waals-Brabant</p>
+                                </li>
+                                <li>
+                                    <p>Henegouwen</p>
+                                </li>
+                                <li>
+                                    <p>Luik</p>
+                                </li>
+                                <li>
+                                    <p>Namen</p>
+                                </li>
+                                <li>
+                                    <p>Luxemburg</p>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="fs-5">Recepten</p>
+                        </li>
+                        <li>
+                            <p class="fs-5">Anders dan anders</p>
+                            <ul>
+                                <li>
+                                    <p>Dinner in the skye</p>
+                                </li>
+                                <li>
+                                    <p>Tram experience</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="fs-5">Weetjes</p>
+                            <ul>
+                                <li>
+                                    <p>Ananas</p>
+                                </li>
+                                <li>
+                                    <p>Citroen vs limoen</p>
+                                </li>
+                                <li>
+                                    <p>Ei</p>
+                                </li>
+                                <li>
+                                    <p>Ketchup</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="fs-5">Contact</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toc-p">
+                    <h1 class="h1 color3">Veel plezier op de website!!</h1>
+                </div>
+            </div>
         </main>
+        <footer class="container-fluid text-center h6 small p-4 color3">&copy; 2023 Foods and Facts, all rights reserved.</footer>
     </body>
 </html>
