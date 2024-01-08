@@ -52,6 +52,7 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Neem een kijkje 
                             </a>
+                            <!-- Dropdown lijst met topic pagina's -->
                             <ul class="dropdown-menu color2">
                                 <li><a class="dropdown-item" href="top-restos.html">Top restaurants</a></li>
                                 <li><a class="dropdown-item" href="favo-resto.html">Persoonlijke favoriet</a></li>
@@ -65,6 +66,7 @@
                             <a class="nav-link active" href="contact.html">Contact</a>
                         </li>
                     </ul>
+                    <!-- Search bar om te zoeken door de pagina's van de website -->
                     <div class="search-container">
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
@@ -78,61 +80,62 @@
         </nav>
         <main>
             <article class="container-fluid">
+                <!-- Pagina titel -->
                 <header class="color3 px-2">
                     <h1 class="d-inline-flex color2 rounded-pill ps-4 px-4 pb-1">Contact</h1>
                 </header>
+                <!-- Uitleg over pagina-->
                 <p class="h6 pt-3 ps-4 pb-4 color3 fs-5">
                     Als u een vraag heeft voor de admin of webdesigner, dan kan u het onderstaande contact formulier invullen
                 </p>
-                <div class="container-fluid px-4 pt-2">
-                    <!-- Bootstrap 5 starter form -->
+                <section class="container-fluid px-4 pt-2">
+                    <!-- Contact form -->
                     <form id="contactForm">
-                        <div class="row mb-3 d-flex">
-                            <!-- Name input -->
-                            <div class="col-md-6 mb-4">
+                        <section class="row mb-3 d-flex">
+                            <!-- Naam input -->
+                            <section class="col-md-6 mb-4">
                                 <label class="form-label" for="name">Name</label>
                                 <input class="form-control" id="name" type="text" placeholder="Name" />
-                            </div>
+                            </section>
                         
                             <!-- Email address input -->
-                            <div class="col-md-6">
+                            <section class="col-md-6">
                                 <label class="form-label" for="emailAddress">Email Address</label>
                                 <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-                            </div>
-                        </div>
+                            </section>
+                        </section>
     
-                        <!-- Message input -->
-                        <div class="mb-3">
+                        <!-- Bericht input -->
+                        <section class="mb-3">
                             <label class="form-label" for="message">Message</label>
                             <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-                        </div>
+                        </section>
                         
-                        <div class="form-check">
+                        <section class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Noah Depasse (Admin)
                             </label>
-                        </div>
-                        <div class="form-check">
+                        </section>
+                        <section class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
                                 Hach Timelus (Webdesigner)
                             </label>
-                        </div>
+                        </section>
     
                         <!-- Form submit button -->
-                        <div class="d-grid pt-3">
+                        <section class="d-grid pt-3">
                             <button class="btn btn-primary btn-lg color4 color no-border" type="submit">Submit</button>
-                        </div>
-                  
+                        </section>
                     </form>
-                  
-                  </div>
-                  <section class="container-fluid pb-5 pt-5">
+                </div>
+                <!-- Locatie + info -->
+                <section class="container-fluid pb-5 pt-5">
                     <div class="card">
                         <div class="row color2">
                             <div class="col-md-6">
-                                <div class="card-body color3">
+                                <section class="card-body color3">
                                     <h1 class="h2">Waar u ons kan vinden</h5>
                                     <p class="h5">Campus Noorderplaats</p>
                                     <p>Noorderplaats 2, 2000 Antwerpen</p>
@@ -142,9 +145,9 @@
                                     <p>Ellermanstraat 71, 2060 Antwerpen</p>
                                     <h2 class="h5 pt-3">Voor dringende vragen</h6>
                                     <p><a class="color3" href="mailto: s148820@ap.be">s148820@ap.be</a></p>
-                                    
-                                </div>
+                                </section>
                             </div>
+                            <!-- Kaart met locaties -->
                             <section class="col-md-6">
                                 <div id="ap-map"></div>
                             </section>
